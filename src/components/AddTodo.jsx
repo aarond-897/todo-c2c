@@ -11,12 +11,6 @@ const AddTodo = props =>{
 
     let [newTodo, setNewTodo]=useState('');
 
-    // const useStyles = makeStyles({
-    //     root:{
-            
-    //     }
-
-    // })
 
     const addTask = () =>{
         axios.post('/api/todo',{newTodo})
